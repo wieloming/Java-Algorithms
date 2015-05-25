@@ -1,5 +1,8 @@
 package companies.forgotten;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -61,10 +64,12 @@ public class Main {
 //        CheckIfStringIsRotatedPalindrome checkIfStringIsRotatedPalindrome = new CheckIfStringIsRotatedPalindrome();
 //        System.out.println(checkIfStringIsRotatedPalindrome.calculate("3211234"));
 
-//        GetAllSubsetsOfArray getAllSubsetsOfArray = new GetAllSubsetsOfArray();
-//        ArrayList<Integer> array = new ArrayList<>(Arrays.asList(1, 2, 3));
-//
-//        System.out.println(getAllSubsetsOfArray.calculate(array, new ArrayList<>()));
+        GetAllSubsetsOfArray getAllSubsetsOfArray = new GetAllSubsetsOfArray();
+        Set<Integer>  array = new HashSet<>();
+        array.add(1);
+        array.add(2);
+        array.add(3);
+        System.out.println(getAllSubsetsOfArray.calculate(array));
 
     }
 }
