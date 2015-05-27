@@ -1,7 +1,7 @@
 package companies.forgotten;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Main {
 
@@ -64,13 +64,16 @@ public class Main {
 //        CheckIfStringIsRotatedPalindrome checkIfStringIsRotatedPalindrome = new CheckIfStringIsRotatedPalindrome();
 //        System.out.println(checkIfStringIsRotatedPalindrome.calculate("3211234"));
 
-        GetAllSubsetsOfArray getAllSubsetsOfArray = new GetAllSubsetsOfArray();
-        Set<Integer>  array = new HashSet<>();
-        array.add(1);
-        array.add(2);
-        array.add(3);
-        System.out.println(getAllSubsetsOfArray.calculate(array));
+//        GetAllSubsetsOfArray getAllSubsetsOfArray = new GetAllSubsetsOfArray();
+//        Set<Integer>  array = new HashSet<>();
+//        array.add(1);
+//        array.add(2);
+//        array.add(3);
+//        System.out.println(getAllSubsetsOfArray.calculate(array));
 
+        PrintAllPairsInSortedArrayThatSumsToM printAllPairsInSortedArrayThatSumsToM = new PrintAllPairsInSortedArrayThatSumsToM();
+        Integer[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 9, 10, 10, 11, 11, 11, 11, 11, 12, 13, 15};
+        printAllPairsInSortedArrayThatSumsToM.count(new ArrayList<>(Arrays.asList(array)), 9);
     }
 }
 
