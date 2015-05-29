@@ -71,9 +71,14 @@ public class Main {
 //        array.add(3);
 //        System.out.println(getAllSubsetsOfArray.calculate(array));
 
-        PrintAllPairsInSortedArrayThatSumsToM printAllPairsInSortedArrayThatSumsToM = new PrintAllPairsInSortedArrayThatSumsToM();
-        Integer[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 9, 10, 10, 11, 11, 11, 11, 11, 12, 13, 15};
-        printAllPairsInSortedArrayThatSumsToM.count(new ArrayList<>(Arrays.asList(array)), 9);
+//        PrintAllPairsInSortedArrayThatSumsToM printAllPairsInSortedArrayThatSumsToM = new PrintAllPairsInSortedArrayThatSumsToM();
+//        Integer[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 9, 10, 10, 11, 11, 11, 11, 11, 12, 13, 15};
+//        printAllPairsInSortedArrayThatSumsToM.count(new ArrayList<>(Arrays.asList(array)), 9);
+
+        PrintAllCombinationsOfCoinsPerAmount printAllCombinationsOfCoinsPerAmount = new PrintAllCombinationsOfCoinsPerAmount();
+        Integer[] array = {25, 10, 5, 1};
+        printAllCombinationsOfCoinsPerAmount.count(new ArrayList<>(Arrays.asList(array)), 25);
+
     }
 }
 
