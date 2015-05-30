@@ -1,7 +1,6 @@
 package companies.forgotten;
 
-import java.util.ArrayList;
-import java.util.Arrays;
+import stuff.Tree;
 
 public class Main {
 
@@ -75,9 +74,18 @@ public class Main {
 //        Integer[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 9, 10, 10, 11, 11, 11, 11, 11, 12, 13, 15};
 //        printAllPairsInSortedArrayThatSumsToM.count(new ArrayList<>(Arrays.asList(array)), 9);
 
-        PrintAllCombinationsOfCoinsPerAmount printAllCombinationsOfCoinsPerAmount = new PrintAllCombinationsOfCoinsPerAmount();
-        Integer[] array = {25, 10, 5, 1};
-        printAllCombinationsOfCoinsPerAmount.count(new ArrayList<>(Arrays.asList(array)), 25);
+//        PrintAllCombinationsOfCoinsPerAmount printAllCombinationsOfCoinsPerAmount = new PrintAllCombinationsOfCoinsPerAmount();
+//        Integer[] array = {25, 10, 5, 1};
+//        printAllCombinationsOfCoinsPerAmount.count(new ArrayList<>(Arrays.asList(array)), 25);
+
+        FindClosestNumberInBST findClosestNumberInBST = new FindClosestNumberInBST();
+        Tree tree1 = new Tree(8);
+        tree1.left = new Tree(3);
+        tree1.right = new Tree(10);
+        tree1.right.right = new Tree(14);
+        tree1.left.left = new Tree(1);
+        tree1.left.right = new Tree(6);
+        findClosestNumberInBST.count(tree1, 11);
 
     }
 }

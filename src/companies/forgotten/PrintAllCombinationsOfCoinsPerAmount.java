@@ -1,6 +1,7 @@
 package companies.forgotten;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.stream.Collectors;
 
 public class PrintAllCombinationsOfCoinsPerAmount {
@@ -9,6 +10,7 @@ public class PrintAllCombinationsOfCoinsPerAmount {
     }
 
     private void count(ArrayList<Integer> coins, int amount, ArrayList<Integer> coinsUsed) {
+        Collections.sort(coins, (x, y) -> y-x);
         if (amount == 0) {
             System.out.println(coinsUsed);
         } else if (amount > 0) {
