@@ -1,6 +1,7 @@
 package companies.forgotten;
 
-import stuff.Tree;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Main {
 
@@ -78,15 +79,18 @@ public class Main {
 //        Integer[] array = {25, 10, 5, 1};
 //        printAllCombinationsOfCoinsPerAmount.count(new ArrayList<>(Arrays.asList(array)), 25);
 
-        FindClosestNumberInBST findClosestNumberInBST = new FindClosestNumberInBST();
-        Tree tree1 = new Tree(8);
-        tree1.left = new Tree(3);
-        tree1.right = new Tree(10);
-        tree1.right.right = new Tree(14);
-        tree1.left.left = new Tree(1);
-        tree1.left.right = new Tree(6);
-        findClosestNumberInBST.count(tree1, 11);
+//        FindClosestNumberInBST findClosestNumberInBST = new FindClosestNumberInBST();
+//        Tree tree1 = new Tree(8);
+//        tree1.left = new Tree(3);
+//        tree1.right = new Tree(10);
+//        tree1.right.right = new Tree(14);
+//        tree1.left.left = new Tree(1);
+//        tree1.left.right = new Tree(6);
+//        findClosestNumberInBST.count(tree1, 11);
 
+        FindLargestSubsequentSum findLargestSubsequentSum = new FindLargestSubsequentSum();
+        Integer[] array = {6, -6, -2, -3, -9, 8, 8, 7, -10, -4};
+        System.out.println(findLargestSubsequentSum.count(new ArrayList<>(Arrays.asList(array))));
     }
 }
 
