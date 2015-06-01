@@ -1,8 +1,5 @@
 package companies.forgotten;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -88,9 +85,13 @@ public class Main {
 //        tree1.left.right = new Tree(6);
 //        findClosestNumberInBST.count(tree1, 11);
 
-        FindLargestSubsequentSum findLargestSubsequentSum = new FindLargestSubsequentSum();
-        Integer[] array = {6, -6, -2, -3, -9, 8, 8, 7, -10, -4};
-        System.out.println(findLargestSubsequentSum.count(new ArrayList<>(Arrays.asList(array))));
+//        FindLargestSubsequentSum findLargestSubsequentSum = new FindLargestSubsequentSum();
+//        Integer[] array = {6, -6, -2, -3, -9, 8, 8, 7, -10, -4};
+//        System.out.println(findLargestSubsequentSum.count(new ArrayList<>(Arrays.asList(array))));
+
+        ImplementDivisionWithoutOperator implementDivisionWithoutOperator = new ImplementDivisionWithoutOperator();
+        System.out.println(implementDivisionWithoutOperator.count(10, 2));
+        System.out.println(implementDivisionWithoutOperator.count(-10, 2));
     }
 }
 
