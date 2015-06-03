@@ -89,9 +89,13 @@ public class Main {
 //        Integer[] array = {6, -6, -2, -3, -9, 8, 8, 7, -10, -4};
 //        System.out.println(findLargestSubsequentSum.count(new ArrayList<>(Arrays.asList(array))));
 
-        ImplementDivisionWithoutOperator implementDivisionWithoutOperator = new ImplementDivisionWithoutOperator();
-        System.out.println(implementDivisionWithoutOperator.count(10, 2));
-        System.out.println(implementDivisionWithoutOperator.count(-10, 2));
+//        ImplementDivisionWithoutOperator implementDivisionWithoutOperator = new ImplementDivisionWithoutOperator();
+//        System.out.println(implementDivisionWithoutOperator.count(10, 2));
+//        System.out.println(implementDivisionWithoutOperator.count(-10, 2));
+
+        Print2DArrayInCircularOrder print2DArrayInCircularOrder = new Print2DArrayInCircularOrder();
+        int[][] array = {{1, 2, 3, 4}, {10, 11, 12, 5}, {9, 8, 7, 6}};
+        print2DArrayInCircularOrder.count(array);
     }
 }
 
