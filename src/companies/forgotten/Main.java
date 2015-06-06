@@ -17,10 +17,15 @@ public class Main {
 //        PrintAllValidCombinationsOfParenthesis printAllValidCombinationsOfParenthesis = new PrintAllValidCombinationsOfParenthesis();
 //        printAllValidCombinationsOfParenthesis.calculate("(((())))");
 
-//        ConvertDoubleToRational convertDoubleToRational = new ConvertDoubleToRational();
-//        convertDoubleToRational.calculate(0.5);
-//        convertDoubleToRational.calculate(0.125);
-//        convertDoubleToRational.calculate(3.5);
+        ConvertDoubleToRational convertDoubleToRational = new ConvertDoubleToRational();
+        convertDoubleToRational.calculate(0.5);
+        convertDoubleToRational.calculate(0.125);
+        convertDoubleToRational.calculate(3.5);
+
+        companies.forgotten.Scala.ConvertDoubleToRational convertDoubleToRational2 = new companies.forgotten.Scala.ConvertDoubleToRational();
+        convertDoubleToRational2.count(0.5);
+        convertDoubleToRational2.count(0.125);
+        convertDoubleToRational2.count(3.5);
 
 //        PrintAllPermutationsOfAString printAllPermutationsOfAString = new PrintAllPermutationsOfAString();
 //        printAllPermutationsOfAString.count("abc");
