@@ -1,6 +1,6 @@
 package companies.forgotten;
 
-import companies.forgotten.Scala.SearchValueIn2DSortedArray;
+import companies.forgotten.Scala.CheckIdStringIsRotatedPalindrome;
 
 public class Main {
 
@@ -60,9 +60,10 @@ public class Main {
 //        ArrayList<Integer> result = findAllElementsOfLevelInBinaryTree.count(tree1, 2);
 //        System.out.println(result);
 
-//        CheckIfStringIsRotatedPalindrome checkIfStringIsRotatedPalindrome = new CheckIfStringIsRotatedPalindrome();
-//        System.out.println(checkIfStringIsRotatedPalindrome.calculate("3211234"));
-
+        CheckIfStringIsRotatedPalindrome checkIfStringIsRotatedPalindrome = new CheckIfStringIsRotatedPalindrome();
+        System.out.println(checkIfStringIsRotatedPalindrome.calculate("3211234"));
+        CheckIdStringIsRotatedPalindrome checkIdStringIsRotatedPalindrome2 = new CheckIdStringIsRotatedPalindrome();
+        System.out.println(checkIdStringIsRotatedPalindrome2.count("3211234"));
 //        GetAllSubsetsOfArray getAllSubsetsOfArray = new GetAllSubsetsOfArray();
 //        Set<Integer>  array = new HashSet<>();
 //        array.add(1);
@@ -99,11 +100,11 @@ public class Main {
 //        int[][] array = {{1, 2, 3, 4}, {10, 11, 12, 5}, {9, 8, 7, 6}};
 //        print2DArrayInCircularOrder.count(array);
 
-        SearchValueIn2DSortedArray searchValueIn2DSortedArray = new SearchValueIn2DSortedArray();
-        int[][] array = {   {1, 4, 5},
-                            {2, 6, 7},
-                            {3, 8, 9}};
-        System.out.println(searchValueIn2DSortedArray.count(array, 7));
+//        SearchValueIn2DSortedArray searchValueIn2DSortedArray = new SearchValueIn2DSortedArray();
+//        int[][] array = {   {1, 4, 5},
+//                            {2, 6, 7},
+//                            {3, 8, 9}};
+//        System.out.println(searchValueIn2DSortedArray.count(array, 7));
     }
 }
 
