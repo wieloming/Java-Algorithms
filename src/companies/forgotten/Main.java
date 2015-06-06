@@ -1,5 +1,7 @@
 package companies.forgotten;
 
+import companies.forgotten.Scala.SearchValueIn2DSortedArray;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -93,9 +95,15 @@ public class Main {
 //        System.out.println(implementDivisionWithoutOperator.count(10, 2));
 //        System.out.println(implementDivisionWithoutOperator.count(-10, 2));
 
-        Print2DArrayInCircularOrder print2DArrayInCircularOrder = new Print2DArrayInCircularOrder();
-        int[][] array = {{1, 2, 3, 4}, {10, 11, 12, 5}, {9, 8, 7, 6}};
-        print2DArrayInCircularOrder.count(array);
+//        Print2DArrayInCircularOrder print2DArrayInCircularOrder = new Print2DArrayInCircularOrder();
+//        int[][] array = {{1, 2, 3, 4}, {10, 11, 12, 5}, {9, 8, 7, 6}};
+//        print2DArrayInCircularOrder.count(array);
+
+        SearchValueIn2DSortedArray searchValueIn2DSortedArray = new SearchValueIn2DSortedArray();
+        int[][] array = {   {1, 4, 5},
+                            {2, 6, 7},
+                            {3, 8, 9}};
+        System.out.println(searchValueIn2DSortedArray.count(array, 7));
     }
 }
 
