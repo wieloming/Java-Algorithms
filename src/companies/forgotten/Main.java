@@ -1,6 +1,6 @@
 package companies.forgotten;
 
-import companies.forgotten.Scala.CheckIdStringIsRotatedPalindrome;
+import companies.forgotten.Scala.SearchValueIn2DSortedArray;
 
 public class Main {
 
@@ -16,16 +16,15 @@ public class Main {
 
 //        PrintAllValidCombinationsOfParenthesis printAllValidCombinationsOfParenthesis = new PrintAllValidCombinationsOfParenthesis();
 //        printAllValidCombinationsOfParenthesis.calculate("(((())))");
-
-        ConvertDoubleToRational convertDoubleToRational = new ConvertDoubleToRational();
-        convertDoubleToRational.calculate(0.5);
-        convertDoubleToRational.calculate(0.125);
-        convertDoubleToRational.calculate(3.5);
-
-        companies.forgotten.Scala.ConvertDoubleToRational convertDoubleToRational2 = new companies.forgotten.Scala.ConvertDoubleToRational();
-        convertDoubleToRational2.count(0.5);
-        convertDoubleToRational2.count(0.125);
-        convertDoubleToRational2.count(3.5);
+//
+//        ConvertDoubleToRational convertDoubleToRational = new ConvertDoubleToRational();
+//        convertDoubleToRational.calculate(0.5);
+//        convertDoubleToRational.calculate(0.125);
+//        convertDoubleToRational.calculate(3.5);
+//        companies.forgotten.Scala.ConvertDoubleToRational convertDoubleToRational2 = new companies.forgotten.Scala.ConvertDoubleToRational();
+//        convertDoubleToRational2.count(0.5);
+//        convertDoubleToRational2.count(0.125);
+//        convertDoubleToRational2.count(3.5);
 
 //        PrintAllPermutationsOfAString printAllPermutationsOfAString = new PrintAllPermutationsOfAString();
 //        printAllPermutationsOfAString.count("abc");
@@ -53,9 +52,9 @@ public class Main {
 //        System.out.println(findIfBinaryTreeIsBST.count(tree2));
 
 //        FindAllElementsOfLevelInBinaryTree findAllElementsOfLevelInBinaryTree = new FindAllElementsOfLevelInBinaryTree();
-////            8
-////          3   10
-////         1 16  11
+//            8
+//          3   10
+//         1 16  11
 //        Tree tree1 = new Tree(8);
 //        tree1.left = new Tree(3);
 //        tree1.right = new Tree(10);
@@ -64,11 +63,16 @@ public class Main {
 //        tree1.left.right = new Tree(16);
 //        ArrayList<Integer> result = findAllElementsOfLevelInBinaryTree.count(tree1, 2);
 //        System.out.println(result);
+//        companies.forgotten.Scala.FindAllElementsOfLevelInBinaryTree findAllElementsOfLevelInBinaryTree2 = new companies.forgotten.Scala.FindAllElementsOfLevelInBinaryTree();
+//        findAllElementsOfLevelInBinaryTree2.find(tree1, 1);
 
-        CheckIfStringIsRotatedPalindrome checkIfStringIsRotatedPalindrome = new CheckIfStringIsRotatedPalindrome();
-        System.out.println(checkIfStringIsRotatedPalindrome.calculate("3211234"));
-        CheckIdStringIsRotatedPalindrome checkIdStringIsRotatedPalindrome2 = new CheckIdStringIsRotatedPalindrome();
-        System.out.println(checkIdStringIsRotatedPalindrome2.count("3211234"));
+
+//        CheckIfStringIsRotatedPalindrome checkIfStringIsRotatedPalindrome = new CheckIfStringIsRotatedPalindrome();
+//        System.out.println(checkIfStringIsRotatedPalindrome.calculate("3211234"));
+//        CheckIdStringIsRotatedPalindrome checkIdStringIsRotatedPalindrome2 = new CheckIdStringIsRotatedPalindrome();
+//        System.out.println(checkIdStringIsRotatedPalindrome2.count("3211234"));
+//        System.out.println(checkIdStringIsRotatedPalindrome2.isRotatedPalindrome("3211234"));
+
 //        GetAllSubsetsOfArray getAllSubsetsOfArray = new GetAllSubsetsOfArray();
 //        Set<Integer>  array = new HashSet<>();
 //        array.add(1);
@@ -106,10 +110,12 @@ public class Main {
 //        print2DArrayInCircularOrder.count(array);
 
 //        SearchValueIn2DSortedArray searchValueIn2DSortedArray = new SearchValueIn2DSortedArray();
-//        int[][] array = {   {1, 4, 5},
-//                            {2, 6, 7},
-//                            {3, 8, 9}};
+        int[][] array = {   {1, 4, 5},
+                            {2, 6, 7},
+                            {3, 8, 9}};
 //        System.out.println(searchValueIn2DSortedArray.count(array, 7));
+        SearchValueIn2DSortedArray searchValueIn2DSortedArray = new SearchValueIn2DSortedArray();
+        System.out.println(searchValueIn2DSortedArray.count(array, 7));
     }
 }
 

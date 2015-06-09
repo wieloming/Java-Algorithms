@@ -13,14 +13,6 @@ class ConvertDoubleToRational {
   }
 
   private def largestCommonDivisor(number: Int, number2: Int):Int = {
-    var largest = 1
-    var i = 2
-    while(i <= number){
-      if(number % i == 0 && number2 % i == 0){
-        largest = i
-      }
-      i += 1
-    }
-    largest
+    (1 to Math.min(number, number2)).filter(x => number % x == 0 && number2 % x == 0).max
   }
 }

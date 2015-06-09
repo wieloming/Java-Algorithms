@@ -1,19 +1,24 @@
 package companies.forgotten.Scala
 
 class SearchValueIn2DSortedArray {
-  def count(array: Array[Array[Int]], key: Int): (Int, Int) = {
-    var x = array.length - 1
-    var y = 0
-    while (x >= 0 && y <= array(0).length - 1) {
-      println((x, y))
-      if (array(x)(y) > key) {
-        x -= 1
-      } else if (array(x)(y) < key) {
-        y += 1
-      } else {
-        return (x, y)
-      }
+
+  type Position = (Int, Int)
+
+  def count(array: Array[Array[Int]], key: Int): Option[Position] = {
+    count(array, array.length - 1, 0, key)
+  }
+
+  def count(array: Array[Array[Int]], x: Int, y: Int, key: Int): Option[Position] = {
+    if (isIn2DArray(array, (x, y))) {
+      if (array(x)(y) > key) count(array, x - 1, y, key)
+      else if (array(x)(y) < key) count(array, x, y + 1, key)
+      else Some.apply((x, y))
+    } else {
+      None
     }
-    (-1, -1)
+  }
+
+  def isIn2DArray(array: Array[Array[Int]], position: Position): Boolean = {
+    position._1 >= 0 && position._2 <= array(0).length - 1
   }
 }
